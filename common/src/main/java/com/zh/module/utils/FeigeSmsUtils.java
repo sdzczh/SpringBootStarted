@@ -1,7 +1,7 @@
 package com.zh.module.utils;
 
 import com.alibaba.fastjson.JSONObject;
-import com.yibi.common.model.FeiGeSmsResponse;
+import com.zh.module.model.FeiGeSmsResponse;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;

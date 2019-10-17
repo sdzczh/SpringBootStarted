@@ -20,14 +20,11 @@ public class WebsocketClientUtils {
 	}
 	public static void sessionConnectMethod(){
 		PropertyUtils pt = new PropertyUtils("common.properties");
-		String YBWebSocketServer = pt.getProperty("YB.WEBSOCKET");
-		/*if (client != null) {
-			client.close();
-		}*/
+		String WebSocketServer = pt.getProperty("PORN.WEB_SOCKET");
 		if (client == null || !client.getReadyState().equals(READYSTATE.OPEN)) {
             client = null;
 			try {
-				client = new WebSocketClient(new URI(YBWebSocketServer),new Draft_6455()) {
+				client = new WebSocketClient(new URI(WebSocketServer),new Draft_6455()) {
 
 					@Override
 					public void onOpen(ServerHandshake arg0) {
@@ -98,6 +95,9 @@ public class WebsocketClientUtils {
 		}
 	}
 
+	public static void main(String[] args) {
+		sendTextMessage("1235");
+	}
 
 
 }
