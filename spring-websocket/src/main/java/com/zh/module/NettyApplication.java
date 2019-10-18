@@ -4,8 +4,10 @@ import com.zh.module.domain.NettyServer;
 import jdk.nashorn.internal.objects.annotations.Setter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = "com.zh.module.dao")
 public class NettyApplication {
 
     public static void main(String[] args) {
