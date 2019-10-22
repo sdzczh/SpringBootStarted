@@ -10,16 +10,19 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+
 /**
  * @author zhaohe
  */
 @Component
 @Slf4j
-public class StartWebSocket implements CommandLineRunner {
-    @Override
+public class StartWebSocket{
+    /*@Override
     public void run(String... args) throws Exception {
         action();
-    }
+    }*/
+    @PostConstruct
     private static void action(){
         EventLoopGroup eventLoopGroup = new NioEventLoopGroup();
         EventLoopGroup workGroup = new NioEventLoopGroup();
