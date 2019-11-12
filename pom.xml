@@ -20,7 +20,6 @@
         <module>core</module>
         <module>websocket</module>
         <module>web</module>
-        <module>batch</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
