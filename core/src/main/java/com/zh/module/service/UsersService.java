@@ -1,52 +1,52 @@
 package com.zh.module.service;
 
-import com.zh.module.entity.User;
+import com.zh.module.entity.Users;
 import java.util.List;
 import java.util.Map;
 
 /**
  * 
  * @author: autogeneration
- * @date: 2019-11-12 16:44:45
+ * @date: 2019-12-19 18:31:27
  **/ 
-public interface UserService {
+public interface UsersService {
     /**
      * 添加
      * 
      * @author: autogeneration
-     * @date: 2019-11-12 16:44:45
+     * @date: 2019-12-19 18:31:27
      **/ 
-    int insert(User record);
+    int insert(Users record);
 
     /**
      * 添加
      * 
      * @author: autogeneration
-     * @date: 2019-11-12 16:44:45
+     * @date: 2019-12-19 18:31:27
      **/ 
-    int insertSelective(User record);
+    int insertSelective(Users record);
 
     /**
      * 更新
      * 
      * @author: autogeneration
-     * @date: 2019-11-12 16:44:45
+     * @date: 2019-12-19 18:31:27
      **/ 
-    int updateByPrimaryKey(User record);
+    int updateByPrimaryKey(Users record);
 
     /**
      * 更新
      * 
      * @author: autogeneration
-     * @date: 2019-11-12 16:44:45
+     * @date: 2019-12-19 18:31:27
      **/ 
-    int updateByPrimaryKeySelective(User record);
+    int updateByPrimaryKeySelective(Users record);
 
     /**
      * 删除
      * 
      * @author: autogeneration
-     * @date: 2019-11-12 16:44:45
+     * @date: 2019-12-19 18:31:27
      **/ 
     int deleteByPrimaryKey(Integer id);
 
@@ -54,31 +54,33 @@ public interface UserService {
      * 按主键查询
      * 
      * @author: autogeneration
-     * @date: 2019-11-12 16:44:45
+     * @date: 2019-12-19 18:31:27
      **/ 
-    User selectByPrimaryKey(Integer id);
+    Users selectByPrimaryKey(Integer id);
 
     /**
      * 条件查询
      * 
      * @author: autogeneration
-     * @date: 2019-11-12 16:44:45
+     * @date: 2019-12-19 18:31:27
      **/ 
-    List<User> selectAll(Map<Object, Object> param);
+    List<Users> selectAll(Map<Object, Object> param);
 
     /**
      * 分页查询
      * 
      * @author: autogeneration
-     * @date: 2019-11-12 16:44:45
+     * @date: 2019-12-19 18:31:27
      **/ 
-    List<User> selectPaging(Map<Object, Object> param);
+    List<Users> selectPaging(Map<Object, Object> param);
 
     /**
      * 统计查询
      * 
      * @author: autogeneration
-     * @date: 2019-11-12 16:44:45
+     * @date: 2019-12-19 18:31:27
      **/ 
     int selectCount(Map<Object, Object> param);
+
+    Users login(Users user);
 }
